@@ -1,0 +1,182 @@
+/* CSS BY MONTE */
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/* CSS REST */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT VARIABLES */
+:root {
+  --teal: #4CA7C0;
+  --purple: #484FB7;
+  --lavender: #6B8FE7;
+  --yellow: #E9BB57;
+  --pink: #D9526F;
+  --dark-gray: #1E1E1E;
+  --white: #ffffff;
+
+  --font-heading: 'Kavoon', cursive;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+body {
+  font-family: var(--font-body);
+  background-color: var(--lavender);
+  color: var(--dark-gray);
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--purple);
+  color: var(--white);
+  text-align: center;
+  padding: 1em 0;
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: 3em;
+}
+
+header p {
+  font-size: 0.8em;
+}
+
+nav {
+  background-color: var(--yellow);
+  text-align: center;
+  font-style: italic;
+  padding: 1em 0;
+}
+
+nav h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5em;
+}
+
+nav a {
+  display: block;
+  background-color: var(--white);
+  color: var(--purple);
+  text-decoration: none;
+  margin: 0.5em 2em;
+  padding: 0.75em;
+  font-weight: 600;
+  font-size: 0.85em;
+}
+
+section {
+  padding: 1em;
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 0.5em;
+  color: var(--dark-gray);
+  padding: 1em;
+  margin: 0.75em 0;
+}
+
+.card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5em;
+}
+
+.card h4 {
+  color: var(--purple);
+  margin-bottom: 0.25em;
+}
+
+#why-choose .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em;
+}
+
+#why-choose .grid div {
+  padding: 1em;
+  font-size: 0.85em;
+  font-weight: 600;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+#why-choose .grid div:nth-child(1) { background-color: var(--teal); }
+#why-choose .grid div:nth-child(2) { background-color: var(--lavender); }
+#why-choose .grid div:nth-child(3) { background-color: var(--yellow); }
+#why-choose .grid div:nth-child(4) { background-color: var(--white); }
+
+.pricing-table {
+  width: 100%;
+  background-color: var(--white);
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 0.85em;
+}
+
+.pricing-table th, .pricing-table td {
+  border: 1px solid var(--dark-gray);
+  padding: 0.5em;
+  text-align: left;
+}
+
+.cta {
+  background-color: var(--pink);
+  padding: 1em;
+  color: var(--white);
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.cta h2 {
+  font-family: var(--font-heading);
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.cta button {
+  background-color: var(--white);
+  color: var(--dark-gray);
+  border: none;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  margin-top: 0.75em;
+  cursor: pointer;
+  border-radius: 0.25em;
+}
+
+footer {
+  background-color: var(--purple);
+  color: var(--white);
+  text-align: center;
+  font-size: 0.75em;
+  padding: 0.5em;
+}
