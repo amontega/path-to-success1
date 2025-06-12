@@ -1,0 +1,99 @@
+/* CSS BY MONTE */
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Kavoon&display=swap');
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT VARIABLES */
+:root {
+  --teal: #4CA7C0;
+  --purple: #484FB7;
+  --lavender: #6B8FE7;
+  --yellow: #E9BB57;
+  --pink: #D9526F;
+  --dark: #1E1E1E;
+  --white: #ffffff;
+  --font-heading: 'Kavoon', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+
+body {
+  font-family: var(--font-body);
+  background-color: #7CA7F1;
+  color: var(--dark);
+  max-width: 450px;
+  margin: auto;
+}
+
+h1, h2 {
+  font-family: var(--font-heading);
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--purple);
+  padding: 1rem;
+}
+
+nav {
+  background-color: var(--yellow);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: var(--font-heading);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 0.5em;
+  background: var(--white);
+  margin: 0.25em auto;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--purple);
+  width: 80%;
+}
+
+/* Style each service card */
+section#services article {
+  margin: 1rem;
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 1em;
+}
+
+
+
+/* CTA Button */
+section#cta {
+  background-color: var(--pink);
+  padding: 1em;
+  text-align: center;
+  color: var(--white);
+}
+
+section#cta button {
+  background: var(--white);
+  color: var(--dark);
+  padding: 0.5em 1em;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1em;
+}
