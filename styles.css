@@ -58,6 +58,9 @@ table {
 
 /* ROOT VARIABLES */
 :root {
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+  color: var(--dark-gray);
   --teal: #4CA7C0;
   --purple: #484FB7;
   --lavender: #6B8FE7;
