@@ -1,8 +1,13 @@
+/* -------------------- CSS BY CHRISTINA CARRASQUILLA -------------------------------------- */
+
 /* -------------------- IMPORTED FONTS -------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
-/*-------------------- CSS RESET --------------------------------------------*/
-/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+/*-------------------- CSS REST ---------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -13,7 +18,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -24,7 +29,7 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -46,118 +51,91 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-/* -------------------- ROOT VARIABLES ------------------------------------- */
+/* -------------------- ROOT VARIABLES --------------------------------------- */
 :root {
     font-family: "Inter", sans-serif;
     font-size: 1em;
     color: var(--dark-gray);
-    --teal: #4CA7C0;
-    --purple: #484FB7;
-    --lavender: #6B8FE7;
-    --yellow: #E9BB57;
-    --pink: #D9526F;
-    --dark-gray: #1E1E1E;
-    --white: #ffffff;
+    --teal:#4CA7C0; 
+    --purple:#484FB7;
+    --lavender:#6B8FE7; 
+    --yellow:#E9BB57; 
+    --pink:#D9526F;
+    --dark-gray:#1E1E1E; 
+    --white:#ffffff; 
 }
-
-/* -------------------- GLOBAL STYLES (mobile first/small) ------------------ */
-/*---------- LAYOUT ----------*/
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+/*----------LAYOUT----------*/
 html {
     background-color: var(--lavender);
 }
 body {
     max-width: 450px;
     margin: 0 auto;
-    background-color: var(--purple); /* Changed background color */
+    background-color: var(--purple);
 }
-
 header {
     text-align: center;
     padding: 2rem;
     background-color: var(--purple);
 }
-
 nav {
     background-color: var(--yellow);
     text-align: center;
     padding: 15px;
 }
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    list-style: none;
-}
-
 nav ul li a {
     display: block;
     background-color: var(--white);
     padding: 1rem;
-    margin: 10px;
+    margin:10px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
 }
-
 .cards {
     background-color: var(--white);
     border-radius: 15px;
     margin: 1rem;
     padding: 1rem;
 }
-
 #our-services, #why-choose-us, #pricing, #take-the-first-step {
     padding: .5rem;
 }
-
 #why-choose-us {
     background-color: var(--pink);
 }
-
 #why-choose-us ul {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two-column grid */
+    grid-template-columns: 1fr 1fr;
 }
-
 #why-choose-us ul li {
     border-radius: 1rem;
     height: 5rem;
 }
-
 #one {
     background-color: var(--teal);
 }
-
 #two {
     background-color: var(--lavender);
 }
-
 #three {
     background-color: var(--yellow);
 }
-
 #four {
     background-color: var(--white);
 }
-
 table {
     margin: 0 auto;
     background-color: var(--white);
 }
-
 table, th, td {
-    border: 2px solid var(--yellow);
+    border:2px solid var(--yellow);
     padding: 1rem;
 }
-
 #take-the-first-step {
     background-color: var(--pink);
 }
-
 #take-the-first-step a {
     background-color: var(--white);
     color: var(--dark-gray);
@@ -173,18 +151,15 @@ table, th, td {
     font-weight: bold;
     box-shadow: 5px 5px 3px var(--dark-gray);
 }
-
-/* ---------- TEXT ----------*/
+/*----------TEXT----------*/
 h1, h2 {
     font-family: "Kavoon", serif;
     color: var(--white);
 }
-
 header p {
     color: var(--white);
     font-style: italic;
 }
-
 nav h2 {
     color: var(--dark-gray);
     font-family: "Inter";
@@ -194,62 +169,49 @@ nav h2 {
     text-transform: uppercase;
     font-size: 1.5em;
 }
-
 h1 {
     font-size: 3em;
 }
-
-nav h2, nav ul li {
+nav h2, nav ul li{
     margin: 0 auto;
 }
-
 h2, h3, h4, p, li, img {
     margin: .5rem;
 }
-
 h2 {
     font-size: 2em;
     margin: .5rem;
 }
-
 h3 {
     color: var(--yellow);
     font-size: 1.5em;
     font-weight: bold;
 }
-
 h4 {
     color: var(--purple);
     font-size: 1.15em;
     font-weight: bold;
 }
-
 p {
     line-height: 1.5em;
 }
-
 #why-choose-us li {
     font-weight: bold;
     text-align: center;
     font-size: 1.25em;
     padding: 1.75em 1em 0 1em;
 }
-
 th {
     font-weight: bold;
     text-transform: uppercase;
     background-color: var(--yellow);
 }
-
 #take-the-first-step h2 {
     color: var(--white);
 }
-
 #take-the-first-step {
     color: var(--white);
 }
-
-/* FOOTER */
 footer {
     text-align: center;
     background-color: var(--purple);
@@ -261,7 +223,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
 footer a {
     color: var(--white);
 }
